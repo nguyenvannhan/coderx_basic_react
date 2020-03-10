@@ -6,9 +6,9 @@ import TodoItem from './components/TodoItem';
 
 function App() {
     let todoItems = [
-        'Mua Bim Bim',
-        'Di Da Bong',
-        'Di do xang',
+        { title: 'Mua Bim Bim', isComplete: true },
+        { title: 'Di Da Bong', isComplete: false },
+        { title: 'Di do xang', isComplete: false },
     ];
 
   return (
@@ -17,7 +17,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         {
             todoItems.map((item, index) => 
-                <TodoItem title={item} key={index}/> 
+                <TodoItem item={item} key={index}/> 
             )
         }
       </header>

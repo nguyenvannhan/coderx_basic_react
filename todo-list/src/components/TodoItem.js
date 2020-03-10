@@ -1,11 +1,17 @@
 import React from 'react';
+import './TodoItem.css';
 
-function TodoItem(props) {
-    
+
+function TodoItem({ item }) {
+
+    let className = 'TodoItem';
+    if(item.isComplete) {
+        className += ' TodoItem-complete'
+    }
 
     return (
-        <div className="TodoItem">
-            <p>{ props.title }</p>
+        <div className={ className }>
+            <p>{ item.title }</p>
         </div>
     );
 }

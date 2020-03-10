@@ -9,7 +9,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <TodoItem />
+        <TodoItem title="Mua Bim Bim" />
+        <TodoItem title="Mua Bim Bim 1" />
+        <TodoItem title="Mua Bim Bim 2" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>

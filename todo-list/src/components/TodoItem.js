@@ -1,10 +1,11 @@
 import React from 'react';
 
-function TodoItem() {
+function TodoItem(props) {
+    
+
     return (
         <div className="TodoItem">
-            <p>Di cho</p>
-            <p>Di cho</p>
+            <p>{ props.title }</p>
         </div>
     );
 }

@@ -16,9 +16,12 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         {
-            todoItems.map((item, index) => 
+            todoItems.length > 0 && todoItems.map((item, index) => 
                 <TodoItem item={item} key={index}/> 
             )
+        }
+        {
+                  todoItems.length === 0 && <p>Nothing here</p>
         }
       </header>
     </div>
